@@ -1,0 +1,13 @@
+[package]
+name = "ntt-rowmatrix-bench"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ntt-rowmatrix-bench"
+path = "src/main.rs"
+
+[dependencies]
+prover = { git = "https://github.com/0xKanekiKen/winterfell.git", branch = "test-rowmajor-prover", package = "winter-prover", default-features = false }
+rand_utils = { git = "https://github.com/0xKanekiKen/winterfell.git", branch = "test-rowmajor-prover", package = "winter-rand-utils"}
+utils = { package = "winter-utils", version = "0.4.2" }
